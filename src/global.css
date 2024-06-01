@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.doughnut-container,
+.piechart-container {
+  border-radius: 0.5rem;
+  border: 1px solid #36434e;
+  background: #001d31;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+.barchat-container,
+.horizontalbarchat-container {
+  border-radius: 0.5rem;
+  border: 1px solid #36434e;
+  background: #001d31;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+.container {
+  background: #011625;
+  padding: 2.5rem;
+  width: 100%;
+}
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.header-logo {
+  width: 2.6875rem;
+  height: 2.6875rem;
+}
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .chart-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .doughnut-container,
+  .piechart-container {
+    width: 73%;
+  }
+  .barchat-container,
+  .horizontalbarchat-container {
+    width: 78%;
+  }
+}
